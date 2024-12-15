@@ -1,0 +1,245 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+html{
+    font-family: "Pretendard", sans-serif;
+    font-size: 10px;
+}
+
+body{
+    margin:  auto;
+    background-color: rgb(255, 255, 255);
+}
+
+/*링크 데코X*/
+a {
+    text-decoration: none;
+}
+
+/* /////////////////////////////// 몸통 /////////////////////////////// */
+
+/*로고*/
+.headerLine {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.head_index {
+    position: sticky;
+    width: 81vw;
+}
+
+.head_index .logoBox {
+    width: 17vw;
+    height:4vw;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.head_index .logoBox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#menu{
+    position: relative;
+    height:4vw;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu ul{
+    width:20vw;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu ul li{
+    list-style: none;
+    user-select: none;
+    padding: 6px 0px;
+}
+
+#menu ul li a{
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+}
+
+.text-menu a.menuColor2 {
+    color: #BDFF1D !important;
+}
+
+
+#menu ul li a:hover {
+    color: #BDFF1D;
+}
+
+
+
+/* 판매목록 */
+
+.sellKit {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sellKit .sellKitSize {
+    width: 81vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.sellKit .sellKitSize .sellKitTxt {
+    position: relative;
+    width: 81vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2vw;
+    
+}
+
+.sellKit .sellKitSize .sellKitTxt .sellKitTitle{
+    position: relative;
+    font-size: 3vw;
+    font-weight: 800;
+    margin: 0.2vw;
+    
+}
+
+.sellKit .sellKitSize .sellKitTxt .sellKitContent{
+    position: relative;
+    font-size: 1.1vw;
+    font-weight: 500;
+    
+}
+
+/*프로덕트*/
+
+.sellKit .sellKitSize .sellKit_item_container {
+    display: flex;
+    width: 100%;
+    height: 28vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box {
+    width: 20vw;
+    height: auto;
+    border-radius: 15px;
+    margin: 1vw;
+    transition: 0.5s;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box:hover {
+    filter: brightness(60%);
+    cursor: pointer;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 0.7vw;
+}
+
+
+.sellKit .sellKitSize .sellKit_item_container .product_box .price_box .prodcutName {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0.3vw;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box .price_box .productEtc {
+    font-size: 0.8vw;
+    font-weight: 400;
+    color: #a8adaf;
+    margin-bottom: 1.2vw;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box .price_box .productPrice {
+    font-size: 1.4vw;
+    font-weight: 800;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box .price_box .productPrice:hover {
+    color: #82b805;
+    transition: 0.3s;
+}
+
+
+/*이미지 재조정*/
+
+
+/* /////////////////////////////// 공통 /////////////////////////////// */
+
+.text_white{color: white;}
+.text_black{color: rgb(0, 0, 0);}
+.text_gray{color: rgb(44, 49, 69);}
+
+.TW100{font-weight: 100;}
+.TW200{font-weight: 200;}
+.TW300{font-weight: 300;}
+.TW400{font-weight: 400;}
+.TW500{font-weight: 500;}
+.TW600{font-weight: 600;}
+.TW700{font-weight: 700;}
+.TW800{font-weight: 800;}
+
+
+.text_center{text-align: center;}
+.text_left{text-align: left;}
+.text_right{text-align: right;}
+
+/* 푸터 */
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    margin: 10vw;
+    align-items: center;
+    justify-content: center;
+
+
+    font-weight: 400;
+    font-size: 0.6vw;
+}
+
+.filterB {
+    filter: brightness(80%);
+}

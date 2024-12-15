@@ -1,0 +1,497 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+html{
+    font-family: "Pretendard", sans-serif;
+    font-size: 10px;
+}
+
+body{
+    margin:  auto;
+    background-color: black;
+}
+
+.fade-background {
+    /* 초기 상태: 블랙 */
+    background-color: rgb(0, 0, 0);
+}
+
+/*링크 데코X*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* /////////////////////////////// 몸통 /////////////////////////////// */
+
+/*로고*/
+.headerLine {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.head_index {
+    position: sticky;
+    width: 81vw;
+}
+
+.head_index .logoBox {
+    width: 17vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+}
+
+.head_index .logoBox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*큰 메인 카드*/
+.main_container .swiper {
+    margin-left: 0;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+.main_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.main_container .large_card {
+    width: 40vw;
+    height: 40vw;
+    margin-right: 0.3vw;
+    margin-top: 2vh;
+
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/*메인카드 이미지*/
+.swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: auto;
+    filter: brightness(80%);
+    transition: 0.5s;
+}
+
+.swiper .swiper-wrapper .swiper-slide img:hover {
+    transform: all;
+    transition: 0.5s;
+    transform: scale(1.2);
+    
+    height: auto;
+    filter: brightness(50%);
+}
+
+/*메인카드 글씨*/
+.swiper .swiper-wrapper .swiper-slide .large_card_txt {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 100%;
+
+    margin: auto;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title {
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin-left: 2vw;
+    transition: 0.5s;
+}
+
+.swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title2 {
+    font-size: 1vw;
+    font-weight: 300;
+    margin-left: 2.2vw;
+    margin-top: 1.6vw;
+    color: #999999;
+    transition: 0.5s;
+}
+
+.swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title2:hover {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+
+/*작은 메인 카드*/
+.main_container .small_cards {
+    margin-top: 2vh;
+    width: 40vw;
+    height: 40vw;
+    margin-left: 0.15vw;
+    cursor: pointer;
+}
+
+.middleSqure {
+    width: 8px;
+    height: 8px;
+    background-color: #BDFF1D;
+    margin-left: 1.5vw;
+}
+
+.middleSqure2 {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    margin-left: 1.5vw;
+}
+
+.smallCard_title {
+    margin-left: 1.4vw;
+    font-size: 2vw;
+    font-weight: 700;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: #000000;
+}
+
+.smallCard_content {
+    margin-left: 1.4vw;
+    font-size: 1vw;
+    font-weight: 500;
+    color: black;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+/*직사각형*/
+.main_container .small_cards .card1 {
+    width: 40vw;
+    height: 19.7vw;
+    margin-bottom: 0.4vw;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #BDFF1D;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.main_container .small_cards .card1:hover p {
+    transition: 0.5s;
+    transform-origin: 0% 50%;
+    transform: scale(1.2);
+    pointer-events: none;
+}
+
+.main_container .small_cards .card2:hover p {
+    transition: 0.5s;
+    transform-origin: 0% 50%;
+    transform: scale(1.2);
+    pointer-events: none;
+}
+
+.main_container .small_cards .card3:hover p {
+    transition: 0.5s;
+    transform-origin: 0% 50%;
+    transform: scale(1.2);
+    pointer-events: none;
+}
+
+.main_container .small_cards .card1:hover .middleSqure2 {
+    transition: 0.5s;
+    transform-origin: 0% 50%;
+    transform: scale(1.2);
+    pointer-events: none;
+}
+
+.main_container .small_cards .card2:hover .middleSqure {
+    transition: 0.5s;
+    transform-origin: 0% 50%;
+    transform: scale(1.2);
+    pointer-events: none;
+}
+
+.main_container .small_cards .card3:hover .middleSqure {
+    transition: 0.5s;
+    transform-origin: 0% 50%;
+    transform: scale(1.2);
+    pointer-events: none;
+}
+
+
+/*작은정사각형*/
+.main_container .small_cards .two_card {
+    width: 40vw;
+    height: 19.8vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main_container .small_cards .two_card .card2 {
+    width: 20vw;
+    height: 20vw;
+    margin-right: 0.4vw;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #cacbcc;
+    border-radius: 20px;
+}
+
+.main_container .small_cards .two_card .card3 {
+    width: 20vw;
+    height: 20vw;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+/* 판매 목록 */
+.sellKit {
+    margin-top: 10vw;
+    width: 100%;
+    height: 40vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sellKit .sellKitSize {
+    width: 81vw;
+    height: 40vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sellKit .sellKitSize .sellKitTxt {
+    position: relative;
+    width: 81vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.sellKit .sellKitSize .sellKitTxt .sellKitTitle{
+    position: relative;
+    font-size: 3vw;
+    font-weight: 800;
+    margin: 0.2vw;
+    
+}
+
+.sellKit .sellKitSize .sellKitTxt .sellKitContent{
+    position: relative;
+    font-size: 1.1vw;
+    font-weight: 500;
+    
+}
+
+/*프로덕트*/
+
+.sellKit .sellKitSize .sellKit_item_container {
+    display: flex;
+    width: 100%;
+    height: 28vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box {
+    width: 20vw;
+    height: auto;
+    border-radius: 15px;
+    margin: 1.5vw;
+    transition: 0.5s;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box:hover {
+    filter: brightness(60%);
+    cursor: pointer;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 0.7vw;
+}
+
+
+.sellKit .sellKitSize .sellKit_item_container .product_box .price_box .prodcutName {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0.3vw;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box .price_box .productEtc {
+    font-size: 0.8vw;
+    font-weight: 400;
+    color: #a8adaf;
+    margin-bottom: 1.2vw;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box .price_box .productPrice {
+    font-size: 1.4vw;
+    font-weight: 800;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.sellKit .sellKitSize .sellKit_item_container .product_box .price_box .productPrice:hover {
+    color: #82b805;
+    transition: 0.3s;
+}
+
+/*더보기*/
+.sellKit .sellKitSize .goToMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    cursor: pointer;
+}
+
+.sellKit .sellKitSize .goToMore .goToMoreBoxSize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: 2px solid #BDFF1D;
+    border-radius: 20vw;
+
+    width: 4vw;
+    height: 2vw;
+    transition: 0.2s;
+}
+
+
+.sellKit .sellKitSize .goToMore .goToMoreBoxSize .goToMoreSize a {
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #000000;
+}
+
+.sellKit .sellKitSize .goToMore .goToMoreBoxSize:hover {    
+    border: 2px solid #82b805;
+    background-color: #d1d4d8; 
+    transition: 0.2s;
+}
+
+/*이미지 재조정*/
+
+@media (max-width: 2250px){
+    .swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title {
+        font-weight: 700;
+    }
+    
+    .swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title2 {
+        font-weight: 300;
+    }
+
+    .main_container {
+        height: 120vh;
+    }
+}
+
+@media (max-width: 1680px){
+    .swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title {
+        font-weight: 600;
+    }
+    
+    .swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title2 {
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 1240px){
+    .swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title {
+        font-weight: 600;
+    }
+    
+    .swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title2 {
+        font-weight: 200;
+    }
+}
+
+@media (max-width: 860px){
+    .swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title {
+        font-weight: 600;
+    }
+    
+    .swiper .swiper-wrapper .swiper-slide .large_card_txt .large_txt_title2 {
+        font-weight: 200;
+    }
+}
+
+
+/* /////////////////////////////// 공통 /////////////////////////////// */
+
+.text_white{color: white;}
+.text_black{color: rgb(0, 0, 0);}
+.text_gray{color: rgb(44, 49, 69);}
+
+.TW100{font-weight: 100;}
+.TW200{font-weight: 200;}
+.TW300{font-weight: 300;}
+.TW400{font-weight: 400;}
+.TW500{font-weight: 500;}
+.TW600{font-weight: 600;}
+.TW700{font-weight: 700;}
+.TW800{font-weight: 800;}
+
+
+.text_center{text-align: center;}
+.text_left{text-align: left;}
+.text_right{text-align: right;}
+
+/* 푸터 */
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    margin: 10vw;
+    align-items: center;
+    justify-content: center;
+
+
+    font-weight: 400;
+    font-size: 0.6vw;
+}

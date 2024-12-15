@@ -1,0 +1,364 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+html{
+    font-family: "Pretendard", sans-serif;
+    font-size: 10px;
+}
+
+body{
+    margin:  auto;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/*링크 데코X*/
+a {
+    text-decoration: none;
+}
+
+/* /////////////////////////////// 몸통 /////////////////////////////// */
+
+.bgImg {
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%),
+    url(./img/bgPeople.png);
+    background-size: cover, cover;
+    background-position: center,center;
+    filter: blur(3px) brightness(0.7);
+
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    z-index: -1;
+}
+
+/*로고*/
+.headerLine {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.head_index {
+    position: sticky;
+    width: 81vw;
+}
+
+.head_index .logoBox {
+    width: 17vw;
+    height:4vw;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.head_index .logoBox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#menu{
+    position: relative;
+    height:4vw;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu ul{
+    width:20vw;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu ul li{
+    list-style: none;
+    user-select: none;
+    padding: 6px 0px;
+}
+
+#menu ul li a{
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+}
+
+.text-menu a.menuColor2 {
+    color: #BDFF1D !important;
+}
+
+
+#menu ul li a:hover {
+    color: #BDFF1D;
+}
+
+/* 내용물 크기 */
+.txtLine {
+    width: 40vw;
+    height: 0.1vw;
+    background-color: #BDFF1D;
+    margin: 2vw;
+}
+
+.mainTxtBox {
+    width: 80vw;
+    height: auto;
+    margin: 35vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainTxtBox .mainTxtLogo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 15vw;
+}
+
+.mainTxtBox .mainTxtLogo img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainTxtBox .mainTxtContent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+}
+
+.mainTxtBox .mainTxtContent p{
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* 내용물 */
+.news_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news_container .mainTxtBox .contentSize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    height: auto;
+    top: 5vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .columnRule {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/*유형1*/
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 1vw;
+    background-color: #ffffff;
+    border-radius: 1vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox .boxColumn {
+    margin: 2vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox .txtVlaue {
+    font-size: 1vw;
+    font-weight: 800;
+    color: rgb(53, 53, 53);
+
+    margin-bottom: 1vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox .txtTitle {
+    font-size: 1.8vw;
+    font-weight: 800;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+
+    margin-bottom: 1.2vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox .txtContent {
+    font-size: 1.2vw;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(163, 168, 170);
+
+    margin-bottom: 3vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox .txtMoreBox {
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: rgb(53, 53, 53);
+    float: left;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox .boxColumn span{
+    font-size: 0.8vw;
+    margin-left: 0.6vw;
+    color: rgb(53, 53, 53);
+}
+
+
+/*유형2*/
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 1vw;
+    background-color: #BDFF1D;
+    border-radius: 1vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox2 .imgColumn {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox2 .imgColumn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8vw 0.8vw 0 0;
+}
+
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox2 .boxColumn {
+    margin: 2vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox2 .txtVlaue {
+    font-size: 1vw;
+    font-weight: 800;
+    color: rgb(53, 53, 53);
+
+    margin-bottom: 1vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox2 .txtTitle {
+    font-size: 1.8vw;
+    font-weight: 800;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+
+    margin-bottom: 1.2vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox2 .txtContent {
+    font-size: 1.2vw;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(130, 165, 151);
+
+    margin-bottom: 3vw;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox2 .txtMoreBox {
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: rgb(53, 53, 53);
+    float: left;
+}
+
+.mainTxtBox .contentSize .mainTxtBox_contentBox .mainContentBox2 .boxColumn span{
+    font-size: 0.8vw;
+    margin-left: 0.6vw;
+    color: rgb(53, 53, 53);
+}
+
+/*이미지 재조정*/
+
+
+/* /////////////////////////////// 공통 /////////////////////////////// */
+
+.text_white{color: white;}
+.text_black{color: rgb(0, 0, 0);}
+.text_gray{color: rgb(44, 49, 69);}
+
+.TW100{font-weight: 100;}
+.TW200{font-weight: 200;}
+.TW300{font-weight: 300;}
+.TW400{font-weight: 400;}
+.TW500{font-weight: 500;}
+.TW600{font-weight: 600;}
+.TW700{font-weight: 700;}
+.TW800{font-weight: 800;}
+
+
+.text_center{text-align: center;}
+.text_left{text-align: left;}
+.text_right{text-align: right;}
+
+/* 푸터 */
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    margin: 10vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+    font-weight: 400;
+    font-size: 0.6vw;
+}
+
+.filterB {
+    filter: brightness(80%);
+}

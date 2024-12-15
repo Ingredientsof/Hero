@@ -1,0 +1,533 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+html{
+    font-family: "Pretendard", sans-serif;
+    font-size: 10px;
+}
+
+body{
+    margin:  auto;
+    background-color: rgb(255, 255, 255);
+}
+
+/*링크 데코X*/
+a {
+    text-decoration: none;
+}
+
+/* /////////////////////////////// 몸통 /////////////////////////////// */
+
+/*로고*/
+.headerLine {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.head_index {
+    position: sticky;
+    width: 81vw;
+}
+
+.head_index .logoBox {
+    width: 17vw;
+    height:4vw;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.head_index .logoBox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#menu{
+    position: relative;
+    height:4vw;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu ul{
+    width:20vw;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu ul li{
+    list-style: none;
+    user-select: none;
+    padding: 6px 0px;
+}
+
+#menu ul li a{
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+}
+
+.text-menu a.menuColor2 {
+    color: #BDFF1D !important;
+}
+
+
+#menu ul li a:hover {
+    color: #BDFF1D;
+}
+
+
+
+/* 대지 크기 */
+.main_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.main_container .large_card {
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    margin-top: 2vh;
+    margin-right: 1vw;
+
+    cursor: pointer;
+}
+
+.main_container .small_cards {    
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    overflow: hidden; /* 추가된 부분 */
+    user-select: none;
+}
+
+.main_container .small_cards .buyingContent{   
+    position: relative;
+    margin-top: 1.2vw;
+    margin-bottom: 1.2vw;
+    display: block;
+}
+
+/*줌*/
+.container { 
+    position:relative; 
+} 
+
+.img_wrap { 
+    position: relative; 
+    width: 30vw; 
+    height:30vw;
+} 
+
+.img_wrap .img { 
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 1; 
+    border-radius: 20px;
+} 
+
+.zoom_lens { 
+    display: none; 
+    position:absolute; 
+    width: 14vw; 
+    height: 14vw; 
+    background: #000;
+    z-index: 999; 
+    opacity: 0.4; 
+} 
+
+.zoom_result { 
+    display: none; 
+    position: absolute; 
+    top: 0; 
+    left: 32vw; 
+    width: 30vw; 
+    height: 30vw; 
+} 
+
+.img_wrap:hover ~ .zoom_result,
+.img_wrap:hover .zoom_lens { display: block; } 
+
+
+/*프로덕트*/
+.txtLine1 {
+    width: 100%;
+    height: 0.1vw;
+    background-color: #4e4e4e;
+}
+
+.txtLine2 {
+    width: 100%;
+    height: 0.08vw;
+    background-color: #b8bbbd;
+}
+
+.productTxt .productNameShare {
+    display: flex;
+    align-items: center; /* 수직 정렬 */
+    justify-content: space-between;
+    margin-bottom: 1.2vw;
+}
+
+.productTxt .productName {
+    width: auto;
+    height: auto;
+    font-size: 3vw;
+    font-weight: 700;
+    margin-right: 1vw;
+}
+
+.productTxt .shareIcon {
+    width: 3vw;
+    height: 3vw;
+}
+
+.productTxt .shareIcon img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.productTxt .productEx {
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: right;
+    color: #999;
+}
+
+.productTxt .productPrice {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 1.2vw;
+    text-align: right;
+}
+
+.txt1_size {
+    position: relative;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    width: 100%;
+    height: auto;
+}
+
+.txt1_size .txt_sizeFit .productDeliInfoTitle {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0.5vw;
+}
+
+.txt1_size .txt_sizeFit .productDeliInfoContent {
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: #999;
+    margin-bottom: 0.8vw;
+}
+
+.buyingSelect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buyingSelect .sizeSelec {
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.buyingSelect .sizeSelec2 {
+    font-weight: 700;
+    font-size: 2.5vw;
+    margin-left: 0.5vw;
+    color: #93d824 !important;
+}
+
+.buyingSelect .setTxt {
+    display: flex;
+    align-items: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 0.8vw;
+}
+
+.buyingSelect .setTxt .numSet {
+    display: flex;
+    align-items: center;
+}
+
+.buyingSelect .setTxt .numSet .numSetStyle {
+    margin-right: 0.5vw;
+}
+
+
+/*넘버튼*/
+.numBtn {
+    margin-top: 0.6vw;
+    overflow: hidden;
+    margin-bottom: 0.6vw;
+}
+
+.numBtn .btn {
+    float: left;
+    border: 1px solid #CCCCCC;
+    border-right: 0;
+    cursor: pointer;
+}
+
+.numBtn .btn input {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 0;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.numBtn .btn:last-child {
+    border-right: 1px solid #CCCCCC;
+}
+
+.numBtn .btn .result {
+    width: 4vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2vw;
+    background-color: #fff;
+    font-size: 1.1vw;
+}
+
+/*구매버튼*/
+.btn_wrap {
+    display: flex;
+    width: 100%;
+    height: 4.4vw;
+    overflow: hidden;
+    align-items: flex-end;
+}
+
+.btn_wrap .allSize {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.btn_wrap .allSize .btn_1 {
+    width: 100%;
+    height: 100%;
+    margin-right: 0.5vw;
+    background-color: #adaeaf;
+    border-radius: 0.4vw;
+    color: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_wrap .allSize .btn_1 p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.btn_wrap .allSize .btn_2 {
+    width: 100%;
+    height: 100%;
+    margin-left: 0.5vw;
+    background-color: #BDFF1D;
+    border-radius: 0.4vw;
+    color: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_wrap .allSize .btn_2 p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+
+/*네비게이터*/
+
+.navigater {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigater .Detail_nav {
+    position: sticky;
+    top: 4vw; /* 상단 메뉴 높이에 맞춰 조정 */
+    z-index: 999; /* 다른 요소 위에 위치 */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 60vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.navigater .description {
+    position: relative;
+    width: 60vw;
+    height: auto;
+}
+
+.navigater .announcement {
+    position: relative;
+    width: 60vw;
+    height: auto;
+}
+
+.navigater .Delivery {
+    position: relative;
+    width: 60vw;
+    height: auto;
+}
+
+.navigater .description .img_box img{
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.Detail_nav ul {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #fff;
+    list-style: none;
+}
+    
+.Detail_nav ul li {
+    flex: 1;
+    font-size: 1.5vw;
+    float: left;
+}
+    
+.Detail_nav ul li a {
+    color: #000 !important;
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center; line-height: 4vw;
+    border: 1px solid #eee; box-sizing: border-box;
+}
+
+.Detail_nav ul li a:hover {
+    color: #82b805 !important;
+}
+    
+.Detail_nav ul li .Selected {
+    border: 1px solid #82b805;
+}
+
+.Detail_nav ul li .last_child {
+    border-right: 1px solid #82b805;
+}
+
+/* 내용물 */
+.Detail_title {
+    font-size: 2.2vw;
+    font-weight: 700;
+    margin-top: 15vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+.navigater .announcement p {
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 0.2vw;
+    margin-bottom: 0.6vw;
+}
+
+.navigater .Delivery p {
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 0.2vw;
+    margin-bottom: 0.6vw;
+}
+
+
+/*이미지 재조정*/
+
+
+/* /////////////////////////////// 공통 /////////////////////////////// */
+
+.text_white{color: white;}
+.text_black{color: rgb(0, 0, 0);}
+.text_gray{color: rgb(44, 49, 69);}
+
+.TW100{font-weight: 100;}
+.TW200{font-weight: 200;}
+.TW300{font-weight: 300;}
+.TW400{font-weight: 400;}
+.TW500{font-weight: 500;}
+.TW600{font-weight: 600;}
+.TW700{font-weight: 700;}
+.TW800{font-weight: 800;}
+
+
+.text_center{text-align: center;}
+.text_left{text-align: left;}
+.text_right{text-align: right;}
+
+/* 푸터 */
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    margin: 10vw;
+    align-items: center;
+    justify-content: center;
+
+
+    font-weight: 400;
+    font-size: 0.6vw;
+}
+
+.filterB {
+    filter: brightness(80%);
+}
