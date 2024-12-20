@@ -122,6 +122,24 @@ a {
     object-fit: cover;
 }
 
+.startImg2 {
+    width: 80vw;
+    position: relative;
+    margin: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.startImg2 img {
+    width: 90%;
+    height: auto;
+    transform: rotate(-90deg);
+    position: relative;
+    object-fit: cover;
+}
+
+
+
 /*이미지 재조정*/
 
 .mapInfo {
